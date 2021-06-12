@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Trijeet/among-us-js/issues"
   },
-  "homepage": "https://github.com/Trijeet/among-us-js#readme"
+  "homepage": "https://github.com/Trijeet/among-us-js#readme",
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
 }
