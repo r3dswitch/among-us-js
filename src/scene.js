@@ -1,7 +1,9 @@
 import {player_constants} from "./constants.js";
+import {movePlayer} from "./movement.js";
 
-export let player = {};
-export let map = {};
+let player = {};
+let map = {};
+let cursors = {};
 
 export function preload ()
 {
@@ -23,9 +25,10 @@ export function create ()
     player.displayHeight = player_constants.PLAYER_HEIGHT;
     player.displayWidth = player_constants.PLAYER_WIDTH;
 
+    cursors = this.input.keyboard.createCursorKeys();
 }
 
 export function update ()
 {
-
+    movePlayer(player, cursors);
 }

@@ -1,6 +1,7 @@
 import {
-    player, map,
-    preload, create, update
+    preload,
+    create,
+    update,
 } from './src/scene.js';
 
 let config = {
