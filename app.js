@@ -20,7 +20,7 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.image('map', './assets/maps/map-cafeteria.png');
+    this.load.image('map', './assets/maps/map-full.png');
     this.load.spritesheet(
         'player',
         './assets/sprites/walk/walk-combined.png',
@@ -33,7 +33,7 @@ function preload ()
 
 function create ()
 {
-    this.add.image(400, 300, 'map');
+    this.add.image(100, 950, 'map');
     const player = this.add.sprite(350, 450, 'player');
     player.displayHeight = constants['PLAYER_HEIGHT'];
     player.displayWidth = constants['PLAYER_WIDTH'];
