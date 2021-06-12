@@ -30,5 +30,6 @@ export function create ()
 
 export function update ()
 {
+    this.scene.scene.cameras.main.centerOn(player.x, player.y);
     movePlayer(player, cursors);
 }
