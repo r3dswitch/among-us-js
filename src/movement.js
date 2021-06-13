@@ -14,27 +14,39 @@ function isValidMovement(x, y)
 
 export function movePlayer(player, cursors)
 {
-    if (cursors.left.isDown && isValidMovement(player.x - movement_constants.PLAYER_SPEED, player.y))
+    if (cursors.left.isDown)
     {
         player.play('running', true);
-        player.x = player.x - movement_constants.PLAYER_SPEED;
-        player.flipX = true;
+        if (isValidMovement(player.x - movement_constants.PLAYER_SPEED, player.y))
+        {
+            player.x = player.x - movement_constants.PLAYER_SPEED;
+            player.flipX = true;
+        }
     }
-    else if (cursors.right.isDown && isValidMovement(player.x + movement_constants.PLAYER_SPEED, player.y))
+    else if (cursors.right.isDown)
     {
         player.play('running', true);
-        player.x = player.x + movement_constants.PLAYER_SPEED;
-        player.flipX = false;
+        if (isValidMovement(player.x + movement_constants.PLAYER_SPEED, player.y))
+        {
+            player.x = player.x + movement_constants.PLAYER_SPEED;
+            player.flipX = false;
+        }
     }
-    else if (cursors.up.isDown && isValidMovement(player.x, player.y - movement_constants.PLAYER_SPEED))
+    else if (cursors.up.isDown)
     {
         player.play('running', true);
-        player.y = player.y - movement_constants.PLAYER_SPEED;
+        if (isValidMovement(player.x, player.y - movement_constants.PLAYER_SPEED))
+        {
+            player.y = player.y - movement_constants.PLAYER_SPEED;
+        }
     }
-    else if (cursors.down.isDown && isValidMovement(player.x, player.y + movement_constants.PLAYER_SPEED))
+    else if (cursors.down.isDown)
     {
         player.play('running', true);
-        player.y = player.y + movement_constants.PLAYER_SPEED;
+        if (isValidMovement(player.x, player.y + movement_constants.PLAYER_SPEED))
+        {
+            player.y = player.y + movement_constants.PLAYER_SPEED;
+        }
     }
     else
     {
