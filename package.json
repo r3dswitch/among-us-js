@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Trijeet/among-us-js#readme",
   "dependencies": {
-    "phaser": "^3.55.2"
+    "fs": "0.0.1-security",
+    "phaser": "^3.55.2",
+    "pngjs": "^6.0.0"
   }
 }
