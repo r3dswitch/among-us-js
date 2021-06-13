@@ -5,6 +5,11 @@ export const player_constants = {
     PLAYER_WIDTH: 65,
 };
 
+export const map_constants = {
+    SHIP_HEIGHT: 2239,
+    SHIP_WIDTH: 4000,
+};
+
 export const movement_constants = {
     PLAYER_SPEED: 5,
 };
