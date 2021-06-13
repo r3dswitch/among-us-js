@@ -21,11 +21,19 @@ export function preload ()
 export function create ()
 {
     map = this.add.image(100, 950, 'map');
-    player = this.add.sprite(350, 450, 'player');
+
+    player = this.add.sprite(300, 400, 'player', 11).setOrigin(0, 0);
     player.displayHeight = player_constants.PLAYER_HEIGHT;
     player.displayWidth = player_constants.PLAYER_WIDTH;
 
     cursors = this.input.keyboard.createCursorKeys();
+
+    this.anims.create({
+        key: 'running',
+        frames: this.anims.generateFrameNumbers('player', {start: 0, end: 12}),
+        frameRate: 15,
+        repeat: -1,
+    });
 }
 
 export function update ()
