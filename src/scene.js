@@ -30,7 +30,7 @@ export function create ()
 
     this.anims.create({
         key: 'running',
-        frames: this.anims.generateFrameNumbers('player', {start: 0, end: 12}),
+        frames: this.anims.generateFrameNumbers('player', {start: 1, end: 13}),
         frameRate: 15,
         repeat: -1,
     });

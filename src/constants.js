@@ -1,6 +1,6 @@
 export const player_constants = {
-    PLAYER_SPRITE_HEIGHT: 334,
-    PLAYER_SPRITE_WIDTH: 250,
+    PLAYER_SPRITE_HEIGHT: 700,
+    PLAYER_SPRITE_WIDTH: 450,
     PLAYER_HEIGHT: 83,
     PLAYER_WIDTH: 65,
 };
