@@ -22,7 +22,7 @@ export function create ()
 {
     map = this.add.image(100, 950, 'map');
 
-    player = this.add.sprite(300, 400, 'player', 11).setOrigin(0, 0);
+    player = this.add.sprite(300, 400, 'player').setOrigin(0, 0);
     player.displayHeight = player_constants.PLAYER_HEIGHT;
     player.displayWidth = player_constants.PLAYER_WIDTH;
 

@@ -26,5 +26,6 @@ export function movePlayer(player, cursors)
     }
     else {
         player.anims.stop();
+        player.setFrame(11);
     }
 }
