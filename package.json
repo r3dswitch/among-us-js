@@ -1,0 +1,31 @@
+{
+  "name": "among-us-js",
+  "version": "1.0.0",
+  "description": "Demo Among Us game in JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trijeet/among-us-js.git"
+  },
+  "keywords": [
+    "among",
+    "us",
+    "js",
+    "programming",
+    "tutorial"
+  ],
+  "author": "Trijeet Ganguly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trijeet/among-us-js/issues"
+  },
+  "homepage": "https://github.com/Trijeet/among-us-js#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "phaser": "^3.55.2",
+    "pngjs": "^6.0.0"
+  }
+}
